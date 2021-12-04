@@ -1,13 +1,31 @@
+var change=0;
 window.addEventListener('scroll',()=>{
     let nav=document.querySelector('nav');
     let windowposition=window.scrollY>0;
+    if(change%2==0){
     nav.classList.toggle('scrooling-active',windowposition);
-    nav.classList.remove('navchange');
-    if(windowposition==0)
+    nav.classList.remove('navchange');}
+    if(windowposition==0 && change%2==0)
     {
         nav.classList.add('navchange');
     }
 })
+
+changeheight=()=>{
+    change++;
+    let nav=document.querySelector('nav');
+    if(change%2!=0){
+        nav.classList.remove('navchange');
+        nav.classList.remove('scrooling-active');;
+
+        nav.classList.add('changeheight');
+    }
+    else{
+        nav.classList.remove('changeheight');
+        nav.classList.add('scrooling-active');;
+
+    }
+}
 
 window.addEventListener('scroll',()=>{
     let h2=document.querySelector('h2');
@@ -42,7 +60,8 @@ window.addEventListener('scroll',()=>{
            a.removeAttribute('style');
            if(ltx===li[len])
            {
-               a.style.color='#00dfd2';
+               a.style.color='#ffe268';
+               a.style.decoration='none';
             }
             li[len].classList.add('highlight');
         })

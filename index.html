@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Binerr</title>
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+  <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -15,6 +18,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Outfit&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@700&family=Outfit&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+  <script src="https://kit.fontawesome.com/d8ebc2a63b.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -25,13 +35,15 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg navchange">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" id="compname">
-          <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
-            class="d-inline-block align-text-top">
-          Binerr
+          <!-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
+            class="d-inline-block align-text-top"> -->
+          3inerr
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="changeheight()">
           <span class="navbar-toggler-icon"></span>
+
         </button>
         <div class="d-flex justify-content-end">
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -46,17 +58,15 @@
                 <a class="nav-link" href="#contact" id="toggle" tabindex="-1" aria-disabled="true">Contact us</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="background-color: white;
-            color: #0d6efd;">
+            <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+              style="background-color: #ffe268;
+            color: #9b5c05;">
               Login
             </button>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="background-color: white;
-            color: #0d6efd;">
-              Signup
-            </button>
-          
+
+
           </div>
-          
+
         </div>
       </div>
       </div>
@@ -66,138 +76,79 @@
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-        
-            <img src="images/1.jpg" alt=""
-            class="d-inline-block align-text-top container" style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
-            <div class="loginhead">
-              Signin with us 
-            </div>
-        
-            <div class=" container">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+
+          <img src="images/1.jpg" alt="" class="d-inline-block align-text-top container"
+            style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
+          <div class="loginhead">
+            Signin with us
           </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
+
+          <div class=" container">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
             </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="background-color: white; color: blueviolet; text-decoration: underline; border: 2px solid white;">
-              Don't have a account on Binerr?
-            </button>
-                    
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+            style="background-color: white; color: blueviolet; text-decoration: underline; border: 2px solid white;">
+            Don't have a account on Binerr?
+          </button>
+
           <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary planbutton">Login</button>
           </div>
-          </div>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
-        
-            <img src="images/1.jpg" alt=""
-            class="d-inline-block align-text-top container" style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
-            <div class="loginhead">
-              Connect with us 
+
+          <img src="images/1.jpg" alt="" class="d-inline-block align-text-top container"
+            style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
+          <div class="loginhead">
+            Connect with us
+          </div>
+
+          <div class=" container">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
+              <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
             </div>
-        
-            <div class=" container">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-            <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Confirm Password</span>
-            <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+              <input type="password" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
             </div>
-            
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Confirm Password</span>
+              <input type="password" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+
           <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary planbutton">Create Account</button>
           </div>
-          </div>
         </div>
       </div>
     </div>
-
-    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        
-            <img src="images/1.jpg" alt=""
-            class="d-inline-block align-text-top container" style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
-            <div class="loginhead">
-              Connect with us 
-            </div>
-        
-            <div class=" container">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-            <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Confirm Password</span>
-            <input type="password" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-            </div>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="background-color: white; color: blueviolet; text-decoration: underline; border: 2px solid white;">
-              I already have a account on Binerr
-            </button>
-            
-          <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary planbutton">Create Account</button>
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        
-            <img src="images/1.jpg" alt=""
-            class="d-inline-block align-text-top container" style="    height: 35px;width: 63px;margin-top: 41px;margin-bottom: -4px;border-radius: 94px;">
-            <div class="loginhead">
-              Signin with us 
-            </div>
-        
-            <div class=" container">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Email</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-            </div>
-                    
-          <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary planbutton">Login</button>
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Carousel part -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 75px;">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -209,7 +160,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active carousal-height">
           <img src="images/1.jpg" class="d-block w-100 carousal-height" alt="...">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block d-flex">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
@@ -242,7 +193,7 @@
     </div>
 
     <!-- Plans part -->
-    <h2 id="planhead">Our Plans</h2>
+    <h2 id="planhead">Our Services</h2>
     <div class="card container mt-5 plans" data-aos="fade-up">
       <div class="card-header">
         Featured
@@ -277,22 +228,22 @@
     </div>
 
     <!-- Calculator -->
-    <div class="d-flex justify-content-center mt-5">
-      <h3 id="calcuhead" data-aos="fade-right">Calculator</h3>
-    </div>
-    <div id="calculator" data-aos="fade-up">
-      <div class="mt-4">
-        <h3 id="caltitle">Put the value at the left to covert:</h3>
-        <div class="d-flex justify-content-evenly mt-5" id="calcubody">
-          <input class="calinput" onclick="inputshadow()" type="number" name="input" placeholder="Put the number"
-            id="input">
-          <input class="calinput" onclick="inputshadow()" type="number" name="output" id="output">
-        </div>
-        <div class="d-flex justify-content-center mt-5">
-          <button type="button" onclick="giveoutput()" class="btn btn-success planbutton">Convert</button>
+      <div class="d-flex justify-content-center mt-5">
+        <h3 id="calcuhead" data-aos="fade-right">Calculator</h3>
+      </div>
+      <div id="calculator" data-aos="fade-up">
+        <div class="mt-4">
+          <h3 id="caltitle">Put the value at the left to covert:</h3>
+          <div class="d-flex justify-content-evenly mt-5" id="calcubody">
+            <input class="calinput" onclick="inputshadow()" type="number" name="input" placeholder="Put the number"
+              id="input">
+            <input class="calinput" onclick="inputshadow()" type="number" name="output" id="output">
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <button type="button" onclick="giveoutput()" class="btn btn-success planbutton">Convert</button>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- About us part -->
@@ -306,55 +257,37 @@
           <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
 
-          <h2>Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          <h2 style="margin-top: 17px;">Pranav Singh Pundir</h2>
+          <h3>Founder</h3>
+          <h5 style="margin-bottom: 0rem;">Student at</h5>
+          <h5 style="margin-bottom: 0rem;">IIT Madras</h5>
+          <p></p>
+          <i class="fab fa-2x fa-linkedin"></i>
+          <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
           <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
 
-          <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          <h2 style="margin-top: 17px;">Hariom Yagnik</h2>
+          <h3>Co-Founder </h3>
+          <h5 style="margin-bottom: 0rem;">Student at New LJ</h5>
+          <h5 style="margin-bottom: 0rem;">Institute of Technology</h5>
+          <p></p>
+          <i class="fab fa-2x fa-linkedin"></i>
+          <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
           <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
             aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
 
-          <h2>Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div>
-      <div class="row mt-5" data-aos="fade-up">
-        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-          <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
-
-          <h2>Heading</h2>
-          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first
-            column.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-          <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
-
-          <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.
-          </p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4 d-flex justify-content-center align-items-center flex-column">
-          <img src="images/1.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" role="img"
-            aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false" alt="">
-
-          <h2>Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+          <h2 style="margin-top: 17px;">Sharvil Shah</h2>
+          <h3>Co-Founder</h3>
+          <h5 style="margin-bottom: 0rem;">Student at</h5>
+          <h5 style="margin-bottom: 0rem;">IIT Madras</h5>
+          <p></p>
+          <i class="fab fa-2x fa-linkedin"></i>
+          <!-- <p><a class="btn btn-secondary" href="#">View details »</a></p> -->
         </div><!-- /.col-lg-4 -->
       </div>
     </div>
@@ -368,7 +301,6 @@
     </div>
     <div class="contact" data-aos="fade-up">
       <div class="col-md-7 col-lg-8" style="margin-top: 16px;">
-        <h4 class="mb-3" id="formhead">Fill the form</h4>
         <form class="needs-validation" novalidate="">
           <div class="row g-3">
             <div class="col-sm-6">
@@ -406,49 +338,11 @@
               </div>
             </div>
 
-            <div class="col-12">
-              <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
-              <div class="invalid-feedback">
-                Please enter your shipping address.
-              </div>
-            </div>
-
-            <div class="col-12">
-              <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-            </div>
-
-            <div class="col-md-5">
-              <label for="country" class="form-label">Country</label>
-              <input type="text" class="form-control" id="country" placeholder="" required="">
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-
-            <div class="col-md-4">
-              <label for="state" class="form-label">State</label>
-              <input type="text" class="form-control" id="state" placeholder="" required="">
-              <div class="invalid-feedback">
-                Please provide a valid state.
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <label for="zip" class="form-label">Pin no</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required="">
-              <div class="invalid-feedback">
-                Pin no required.
-              </div>
-            </div>
-          </div>
-
           <hr class="my-4">
 
           <div class="form-check">
             <input type="checkbox" class="form-check-input" id="same-address">
-            <label class="form-check-label" for="same-address">You read carefully our terms and conditions</label>
+            <label class="form-check-label" for="same-address">I have read carefully our terms and conditions</label>
           </div>
 
           <div class="form-check">
