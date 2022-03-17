@@ -119,12 +119,12 @@ font-size: 25px;
 }
 .contact::before{
     content: "";
-    background:#2f5d62 center center/cover no-repeat;
+    background: #00BFFF center center/cover no-repeat;
     background-attachment: fixed;
-    border-radius: 105px;
+    border-radius: 8px;
     position: absolute;
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 85%;
     z-index: -1;
     opacity: 1.8;
 }
