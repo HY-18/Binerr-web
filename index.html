@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Binerr</title>
+  <title>Macro.com</title>
   <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
   <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
@@ -32,12 +32,12 @@
 
   <!-- Navigation Bar -->
   <section id="home">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg navchange">
+    <nav class="navbar navbar-expand-lg fixed-top bg navchange">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" id="compname">
           <!-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24"
             class="d-inline-block align-text-top"> -->
-          3inerr
+          Macro.com
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -47,30 +47,32 @@
         </button>
         <div class="d-flex justify-content-end">
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="search-container">
+              <form action="/action_page.php">
+                <div class="search-baar">
+                <input type="text" placeholder="What are you looking for?" name="search"><i class="fa fa-search"></i></div>
+                <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+              </form>
+            </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item links " style="margin-right: 20px;">
-                <a class="nav-link active" aria-current="page" href="#home" id="toggle">Home</a>
-              </li>
-              <li class="nav-item links" style="margin-right: 20px;">
-                <a class="nav-link" href="#aboutus" id="toggle">About us</a>
-              </li>
-              <li class="nav-item links" style="margin-right: 20px;">
-                <a class="nav-link" href="#contact" id="toggle" tabindex="-1" aria-disabled="true">Contact us</a>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal1"
-              style="background-color: #ffe268;
-            color: #9b5c05;">
+            <li><button id="button-hov" type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+              style="background-color: #00BFFF;
+            color: whitesmoke; border: none">
               Login
-            </button>
-
-
+            </button></li>
+            <li><button id="button-hov" type="button" class="btn btn-primary mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+              style="background-color: #00BFFF;
+            color: whitesmoke">
+              Register
+            </button></li>
+            </ul>
           </div>
-
         </div>
       </div>
       </div>
     </nav>
+
+    <hr>
 
     <!-- Login and Singup modal -->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
@@ -97,7 +99,7 @@
           </div>
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2"
             style="background-color: white; color: blueviolet; text-decoration: underline; border: 2px solid white;">
-            Don't have a account on Binerr?
+            Don't have a account on Macro.com?
           </button>
 
           <div class="modal-footer d-flex justify-content-center" style="margin-bottom: 20px">
@@ -144,107 +146,129 @@
         </div>
       </div>
     </div>
+      </div>
     </div>
 
-    </div>
-    <!-- Carousel part -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-top: 75px;">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+    <!-- Main Home Page -->
+    <div class="cards">
+      <div class="card_head">
+      <h1>Worried about procurement?</h1>
+      <p> We have got it all covered - Explore!</p>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active carousal-height">
-          <img src="images/1.jpg" class="d-block w-100 carousal-height" alt="...">
-          <div class="carousel-caption d-none d-md-block d-flex">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
+      <div class="card_foot1">
+        <div class="card container mt-1 caards">
+          <p class="card-text">Textile</p>
         </div>
-        <div class="carousel-item carousal-height">
-          <img src="images/2.jpg" class="d-block w-100 carousal-height" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Paints</p>
         </div>
-        <div class="carousel-item carousal-height">
-          <img src="images/3.jpeg" class="d-block w-100 carousal-height" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Metals</p>
           </div>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Polymer</p>
+        </div>
+        </div>
+        <br>
+        <div class="card_foot2">
+        <div class="card container mt-1 caards">
+          <p class="card-text">Chemicals</p>
+        </div>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Pharmaceuticals</p>
+        </div>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Elastomer</p>
+        </div>
+        <div class="card container mt-1 caards">
+          <p class="card-text">Other Categories</p>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <!-- Plans part -->
-    <h2 id="planhead">Our Services</h2>
-    <div class="card container mt-5 plans" data-aos="fade-up">
+    <div class="could">
+      <h3><b>Couldn't find the raw material?</b> - Don't worry, we will help you</h3>
+      <p>Raise a demand. We will get you an offer within 24 hours!</p>
+      <div class="butoon">
+      <button>Still not raised the demand?</button>
+      </div>
+      </div>
+
+      <!-- Overview -->
+    <div class="ymacro">
+        <h1>Why Macro?</h1>
+        <p><pre>
+        Interact with all the sellers in one place.
+        Place the order as per your demand and get it delivered it on your foot-step.</pre></p>
+        </div>
+
+        <div class="card container mt-1 plaan" data-aos="fade-right">
       <div class="card-header">
-        Featured
+        BEST PRICE
       </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-success planbutton">Read More</a>
-      </div>
-    </div>
-
-    <div class="card container mt-5 plans" data-aos="fade-up">
-      <div class="card-header">
-        Featured
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-success planbutton">Read More</a>
-      </div>
-    </div>
+        <p class="card-text">Get your desired raw materials 
+          at lowest price </p>
+    </div></div>
 
     <div class="card container mt-5 plans" data-aos="fade-up">
       <div class="card-header">
-        Featured
+        LOGISTICS
       </div>
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-success planbutton">Read More</a>
+        <p class="card-text">Get your material delivered at
+          your door step with just 
+          a click.</p>
       </div>
     </div>
 
-    <!-- Calculator -->
-      <div class="d-flex justify-content-center mt-5">
-        <h3 id="calcuhead" data-aos="fade-right">Calculator</h3>
+    <div class="card container mt-5 plans" data-aos="fade-up">
+      <div class="card-header">
+        ASSURED REFUND
       </div>
-      <div id="calculator" data-aos="fade-up">
-        <div class="mt-4">
-          <h3 id="caltitle">Put the value at the left to covert:</h3>
-          <div class="d-flex justify-content-evenly mt-5" id="calcubody">
-            <input class="calinput" onclick="inputshadow()" type="number" name="input" placeholder="Put the number"
-              id="input">
-            <input class="calinput" onclick="inputshadow()" type="number" name="output" id="output">
-          </div>
-          <div class="d-flex justify-content-center mt-5">
-            <button type="button" onclick="giveoutput()" class="btn btn-success planbutton">Convert</button>
-          </div>
-        </div>
+      <div class="card-body">
+        <p class="card-text">Get full refund in case of product
+          mismatch or any quality 
+          issues.</p>
       </div>
+    </div>
+
+    <div class="card container mt-5 plans" data-aos="fade-up">
+      <div class="card-header">
+        ORDER SAMPLE
+      </div>
+      <div class="card-body">
+        <p class="card-text">Get free sample delivered within 
+          24-48 hours.</p>
+      </div>
+    </div>
+
+    <div class="card container mt-5 plans" data-aos="fade-up">
+      <div class="card-header">
+        INDEPEDANT
+      </div>
+      <div class="card-body">
+        <p class="card-text">Macro is wholly independent, 
+          seperate from any service 
+          center,producing mill or 
+          any company</p>
+      </div>
+    </div>
+
+    <div class="card container mt-5 plans" data-aos="fade-up">
+      <div class="card-header">
+        CUSTOMER SUPPORT
+      </div>
+      <div class="card-body">
+        <p class="card-text">We have a team of industry trained
+          proffesionals empowered with
+         the latest technology to help sell
+         and find material for you.
+         </p>
+      </div>
+    </div>
   </section>
+
 
   <!-- About us part -->
   <section id="aboutus">
